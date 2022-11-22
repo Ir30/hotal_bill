@@ -48,6 +48,76 @@ class hotel{
 
         ArrayList<hotel> customer_list = new ArrayList<hotel>();
 
+        while(true){
+           
+            System.out.println("1.order\n2.generate bill\n3.display bill\n4.Exit");
+    
+            int choice=sc.nextInt();
 
+            switch(choice){
+                case 1:{
+                    System.out.println("Name: ");
+                    String name=sc.next();
+                    System.out.println("phone: ");
+                    long phone = sc.nextLong();
+
+                    hotel h = new hotel(name,phone);
+                    customer_list.add(h);
+
+                    // System.out.println(h.name+"-"+h.phone);
+
+                    
+                    boolean status = true;
+
+                    while(status){
+                        System.out.println("1.Tea\n2.Snaks\n3.cofee\n4.exit");
+                        int op = sc.nextInt();
+                        switch(op){
+                            case 1:{
+                                System.out.println("enter quantity: ");
+                                int tea_q = sc.nextInt();
+                                h.tea_q = tea_q;
+                                // System.out.println("tee q -"+h.tea_q);
+                                break;
+                            }
+                            case 2:{
+
+                                System.out.println("enter quantity: ");
+                                int s_quant = sc.nextInt();
+                                h.snak_q=s_quant;
+                                // System.out.println("snak q-"+h.snak_q);
+
+                                break;
+
+                            }
+                            case 3:{
+
+                                System.out.println("enter quantity: ");
+                                int quant = sc.nextInt();
+                                h.cofee_q=quant;
+                                // System.out.println("cofee q-"+h.cofee_q);
+
+                                break;
+
+                            }
+                            case 4:{
+                                status = false;
+                                break;
+
+                            }
+                            default:{
+                                System.out.println("invalid....");
+
+                            }
+                        }
+                    }
+                    break;
+    
+                }
+
+            }
+
+        }
     }
+
 }
