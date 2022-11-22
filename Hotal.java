@@ -115,6 +115,22 @@ class hotel{
     
                 }
 
+                case 2:{
+                    System.out.println("enter Phone no: ");
+                    long ph_n = sc.nextLong();
+                   for(hotel i:customer_list){
+                        if(i.phone == ph_n){
+
+                            // System.out.println("generate bill inside case2");
+
+                            i.generate_bill();
+                        }
+                   }
+                    
+                break;
+
+                }
+
             }
 
         }
