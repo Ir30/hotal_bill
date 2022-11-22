@@ -76,7 +76,7 @@ class hotel{
                             case 1:{
                                 System.out.println("enter quantity: ");
                                 int tea_q = sc.nextInt();
-                                h.tea_q = tea_q;
+                                h.tea_q = h.tea_q+tea_q;
                                 // System.out.println("tee q -"+h.tea_q);
                                 break;
                             }
@@ -84,7 +84,7 @@ class hotel{
 
                                 System.out.println("enter quantity: ");
                                 int s_quant = sc.nextInt();
-                                h.snak_q=s_quant;
+                                h.snak_q=h.snak_q+s_quant;
                                 // System.out.println("snak q-"+h.snak_q);
 
                                 break;
@@ -94,7 +94,7 @@ class hotel{
 
                                 System.out.println("enter quantity: ");
                                 int quant = sc.nextInt();
-                                h.cofee_q=quant;
+                                h.cofee_q=h.cofee_q+quant;
                                 // System.out.println("cofee q-"+h.cofee_q);
 
                                 break;
