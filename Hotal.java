@@ -131,6 +131,33 @@ class hotel{
 
                 }
 
+                case 3:{
+                    
+                    System.out.println("enter Phone no: ");
+                    long ph_n = sc.nextLong();
+                   for(hotel i:customer_list){
+                        if(i.phone == ph_n){
+                            // System.out.println("display bill inside case3");
+                            i.display_bill();
+                        }
+                   }
+
+                   break;
+                
+                
+                }
+
+                case 4:{
+                    
+                    System.exit(0);
+            
+                }
+                default:
+                {
+                    System.out.println("invalid....");
+                }
+
+
             }
 
         }
